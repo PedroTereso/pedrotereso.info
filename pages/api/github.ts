@@ -5,23 +5,17 @@ export const config = {
 };
 
 export default async function handler(req: NextRequest) {
-  const userResponse = await fetch('https://api.github.com/users/leerob');
-  const userReposResponse = await fetch(
-    'https://api.github.com/users/leerob/repos?per_page=100'
+  const followersResponse = await fetch(
+    'https://api.github.com/users/TiagoPereira06/followers'
   );
 
-  const user = await userResponse.json();
-  const repositories = await userReposResponse.json();
+  const followers = await followersResponse.json();
 
-  const mine = repositories.filter((repo) => !repo.fork);
-  const stars = mine.reduce((accumulator, repository) => {
-    return accumulator + repository['stargazers_count'];
-  }, 0);
+  const followersCount = followers.length;
 
   return new Response(
     JSON.stringify({
-      followers: user.followers,
-      stars
+      followersCount: followersCount
     }),
     {
       status: 200,

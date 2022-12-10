@@ -7,14 +7,14 @@ import MetricCard from 'components/metrics/Card';
 export default function GitHubCard() {
   const { data } = useSWR<GitHub>('/api/github', fetcher);
 
-  const stars = new Number(data?.stars);
-  const link = 'https://github.com/leerob';
+  const followers = Number(data?.followersCount);
+  const link = 'https://github.com/TiagoPereira06';
 
   return (
     <MetricCard
-      header="GitHub Stars"
+      header='GitHub Followers'
       link={link}
-      metric={stars}
+      metric={followers}
       isCurrency={false}
     />
   );

@@ -1,13 +1,7 @@
 import Link from 'next/link';
-import useSWR from 'swr';
 import cn from 'classnames';
 
-import fetcher from 'lib/fetcher';
-import { Views } from 'lib/types';
-
 export default function BlogPostCard({ title, slug, gradient }) {
-  const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
-  const views = data?.total;
 
   return (
     <Link
@@ -46,7 +40,7 @@ export default function BlogPostCard({ title, slug, gradient }) {
             />
           </svg>
           <span className="ml-2 align-baseline capsize">
-            {views ? new Number(views).toLocaleString() : '–––'}
+            {100 ? Number(100).toLocaleString() : '–––'}
           </span>
         </div>
       </div>
