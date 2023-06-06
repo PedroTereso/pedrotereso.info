@@ -1,3 +1,7 @@
+<b>THIS DOES NOT WORK! FAULTY PRODUCT! DO NOT TRY TO CLONE THIS REPOSITORY OR PERFORM ANY OTHER KIND OF WORK, IT WILL ONLY BE A WASTE OF YOUR TIME!</b>
+
+AUTHOR TO BE SANCTIONED - @TiagoPereira
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTiagoPereira06%2Ftiagopereira.info&env=NEXT_PUBLIC_SANITY_PROJECT_ID,NEXT_PUBLIC_SANITY_DATASET,SANITY_API_TOKEN,SANITY_PREVIEW_SECRET,SANITY_STUDIO_REVALIDATE_SECRET&envDescription=These%20values%20are%20needed%20to%20connect%20to%20Sanity%20and%20fetch%20content%20for%20blog%20posts.)
 
 # tiagopereira.info
